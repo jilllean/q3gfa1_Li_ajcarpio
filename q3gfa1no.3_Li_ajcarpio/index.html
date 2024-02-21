@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA 1 No.3</title>
+</head>
+<body>
+    <script>
+    var nickname = "Karen";
+    var height = 62;
+    var weight = 50;
+
+    var heightft = Math.floor(height / 12); 
+    var heightin = height % 12;
+    height = heightft + "'" + heightin + '"' ;
+    weight = weight * 2.20462262;
+
+    var confirmation = "Please confirm whether you agree to share your personal information with us.";
+    if (confirm(confirmation)==true)
+    {
+        console.log("Name: " + nickname + "\nHeight: " + height + "\nWeight: " + weight.toFixed(3) + " lbs");
+    }
+    else
+    {
+        console.log("User does not wish to share his/her information.");
+    }
+    </script>
+</body>
+</html>
